@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda</title>
+    
+
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <link rel="stylesheet" href="./css/note.css">
+    <link rel="stylesheet" href="./css/dialog_login.css">
+    <link rel="stylesheet" href="./css/dialog_registrar.css">
+    <link rel="stylesheet" href="./css/configurar.css">
+
+    <link rel="stylesheet" href="./css/efeitos_visuais.css">
+
+</head>
+<script>
+    var $ = require('jQuery');
+    
+</script>
+<body id="body">
+ 
+         
+    <div id='main'      onclick="run()" class="main">
+        <ul id="lista" class="lista"></ul>
+    </div>
+    <div id = 'barra_de_notificação'class="x">
+            nota criada
+    </div>
+    <div class="float_ctn"   id="float"  >
+        <div id='painel_ferramentas' class="painel_ferreamentas">
+            <div class="arquivar" id='lixeira' onclick="lixeira()">
+                <img  class='img_botao' src="./css/deletar_all.svg">
+            </div>
+            <div class="lixeira"   id='usuario' id='trocar_acc'>
+                <img    class='img_botao' src="./css/usuario.svg">
+
+            </div>
+            <div class="trocar_acc"  id='configuração' onclick='ind()'>
+                <img   class='img_botao'  src="./css/configuraçao.svg">
+
+            </div>
+
+        </div>
+        <div class="float" id="float_btn"  >
+            <h1 class="btn">+</h1>
+        </div>
+        
+    </div>
+
+    <!-- <div class="dialogLogin_div ">
+        <div class="dialogLogin_div_inputs">
+            <div class="dialogLogin_div_input">
+                <span class="dialogLogin_texts">email:</span>
+                <input class="dialogLogin_input"></input>
+            </div>
+            <div  class="dialogLogin_div_input" style="grid-row: 4;">
+                <span class="dialogLogin_texts">senha:</span>
+                <input class="dialogLogin_input"></input>
+            </div>
+        </div>
+        <div class="dialogLogin_div_buttons">
+            <div class="dialogLogin_div_icone">
+                <img  class="dialogLogin_icone"src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" alt="">
+            </div>
+            <button class="dialogLogin_botoes"> logar</button>
+            <button class="dialogLogin_botoes" style="grid-row: 3;"> cancelar</button>
+            <span class="registrese"    > registre-se</span>
+
+        </div> -->
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+
+    <script tye='module' src="./js/firebaseDAO.js"></script>
+    <script src="./js/delete_All.JS"></script>
+
+
+    <script src="./js/configuração.js"></script>
+    <script src="./js/efeitos_visuais.js"></script>
+
+    <script type="module" src="./js/frames/frame_registrar.js"> </script>
+    <script type="module" src="./js/frames/frame_cofiguração.js"> </script>
+
+    <script type="module" src="./js/frames/frame_login.js"> </script>
+
+    <script src="./js//json_converter.js"> </script>
+    <script   src='./js/frames/frame_nota.js'></script>
+    <script  src="./js/cria_nota.js"> </script>
+
+        <script type="module" src='./js/main.js'></script>
+
+    <script>
+        function ind(){
+            chama_notificação('recurso indisponivel')
+        }
+        function run(){
+        console.log('sss')
+    }
+    </script>
+
+</body>
+
+</script>
+</html>

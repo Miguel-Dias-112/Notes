@@ -1,0 +1,34 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "electron-prompt": "^1.6.2",
+    "express": "^4.17.1",
+    "expressjs": "^1.0.1",
+    "firebase": "^8.10.1",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.6.0",
+    "smalltalk": "^4.0.7"
+  },
+  "devDependencies": {
+    "electron": "^12.2.3",
+    "electron-builder": "^23.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  
+  "build": {
+    "productName": "agenda",
+    "copyright": "Copyright © 2019 ${Miguel Dias}",
+   
+    "win": {
+      "icon": "./icon8.ico"
+    }}
+}

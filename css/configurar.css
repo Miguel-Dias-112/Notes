@@ -1,0 +1,101 @@
+.div_main{
+    position: fixed;
+    z-index: 3;
+    color: black;
+    width: 85%;
+    height: 350px;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px gainsboro;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.input_tela{
+    margin: 0;
+}
+.div_tela{
+    display: flex;
+    grid-row: 1;
+    background-color: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+
+    align-items: center;
+    width:100%;
+
+    height: 50%;
+}
+
+.div_paletas{
+    display: grid;
+
+    margin-top: 15px;
+    grid-row: 2;
+    width: 80%;
+    height: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    align-self: center;
+    grid-template-rows: 1fr 1fr ;
+
+}
+.div_paleta{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction:row-reverse;
+     gap: 20px;
+    width: 80%;
+    height: 100%;
+    background-color: none;
+}
+
+.div_buttons{
+    align-self: center;
+    height:300px ;
+    width:70% ;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+.button{
+    width: 100%;
+    height: 50px;
+    align-self: center;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.presset{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    border: 0;
+}
+.div_cores{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction:column-reverse;
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    background-color: none;
+}

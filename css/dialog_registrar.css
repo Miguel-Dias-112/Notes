@@ -1,0 +1,111 @@
+.dialogRegistro_mandiv{
+    position: fixed;
+    z-index: 3;
+    color: black;
+    width: 85%;
+    height: 30%;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 20px;
+    border: 2px solid #ff2015;
+    box-shadow: 5px 5px 10px gainsboro;
+    display: grid;
+
+    grid-template-rows:  70% 5% 20% 5%;
+    grid-template-columns: 1fr;
+}
+
+.dialogRegistro_topdiv{
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    display: grid;
+
+
+    align-items: center;
+}
+.dialogRegistro_bottomdiv{
+    width: 100%;
+    height: 100%;
+    background-color:none  ;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:  1fr;
+    align-items: center;
+    justify-items: center;
+}
+.inputdiv{
+    display: flex;
+    flex-direction: column;
+    align-content: center; 
+    justify-content: center;
+    width: 100%;
+    
+    height: 100%;
+}
+.dialogRegistro_cancelarbtn{
+    grid-row: 1;
+    grid-column: 1;
+    width: 80%;
+    height: 80%;
+    border:none;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.dialogRegistro_registrarbtn{
+    grid-row: 1;
+    grid-column: 2;
+    width: 80%;
+    height: 80%;
+    border:none;
+    border-radius: 5px;
+    background-color: white   ;
+    
+}
+.dialogRegistro_email_inp{
+
+    margin-left: 15px;
+
+    width: 90%;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+.dialogRegistro_senha_inp{
+    margin-left: 15px;
+
+    grid-row: 4;
+    align-self: center; 
+    height: 50px;
+    border: 2px solid white;
+    width: 90%;
+    border-radius: 5px;
+
+    
+}
+.span_senha{
+    grid-row: 1;
+
+    font-size: large;
+    margin-left: 15px;
+    border:none;
+    border-radius: 5px;
+
+}
+.span_email{
+    grid-row: 3;
+
+    font-size: large;
+    margin-left: 15px;
+
+    width: 90%;
+    height: 80%;
+    border:none;
+    border-radius: 5px;
+
+}
